@@ -1,1 +1,9 @@
-prompt("hello world")
+$(document).ready(function() {
+
+
+
+
+
+
+
+});
