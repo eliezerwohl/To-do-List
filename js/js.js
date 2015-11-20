@@ -41,4 +41,10 @@ $(document).ready(function() {
   $("#newWord").on("keydown", function() {
     $(".alert").slideUp();
   });
+
+
+  $("table").on("click", ".checkbox", function() {
+   prompt("you clicked it!")
+  });
+
 });
