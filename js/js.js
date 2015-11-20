@@ -3,7 +3,7 @@ $(document).ready(function() {
  $(".btn-default").on("click", function(e) {
     e.preventDefault();
 
-    var newWord, newRow, wordTd, deleteButton, deleteTd;
+    var newWord, newRow, wordTd, deleteButton, checkBox, deleteTd, check;
     var isDuplicate = false;
     
     newWord = $("#newWord").val();
@@ -25,8 +25,10 @@ $(document).ready(function() {
     wordTd = $("<td>").addClass("word-td").append(newWord);
     deleteButton = $("<button>").addClass("btn btn-danger").append("X");
     deleteTd = $("<td>").append(deleteButton);
+    checkBox = $("<input type = 'checkbox'>").addClass("checkbox");
+    check = $("<td>").append(checkBox);
 
-    newRow.append(wordTd).append(deleteTd);
+    newRow.append(wordTd).append(deleteTd).append(check);
 
     $("tbody").append(newRow);
     $("#newWord").val("");
