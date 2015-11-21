@@ -19,7 +19,10 @@ $(document).ready(function() {
       $(".alert").fadeIn(5000);
       return;
     }
-
+    if (newWord.length === 0) {
+      prompt("please enter something to do!");
+      return;
+    };
 
         newRow = $("<tr>");
     wordTd = $("<td>").addClass("word-td").append(newWord);
@@ -43,8 +46,9 @@ $(document).ready(function() {
   });
 
 
-  $("table").on("click", ".checkbox", function() {
-   prompt("you clicked it!")
+$("table").on("click", ".checkbox", function() {
+ $(this).closest('tr').find('> td:first').addClass("line");
+
   });
 
 });
