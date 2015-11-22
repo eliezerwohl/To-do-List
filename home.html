@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/lumen/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
 
@@ -10,6 +13,14 @@
 </head>
   <body>
     <div class= "container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-12">
+          <header class="header">
+            <h2>To do list </h2>
+
+          </header>
+        </div>
+      </div>
       <div class="row-fluid">
         <div class="col-md-8">
           <table class="table toDoTable">
@@ -19,12 +30,7 @@
               <th class="col-md-2">DONE!!! </th> 
             </thead>
             <tbody>
-
-          
-
-
             </tbody>
-
           </table>
         </div>
         <div class="col-md-4">
@@ -34,12 +40,12 @@
             <div class="input-group">
              <input type="text" class="form-control" id="newWord" placeholder="what needs to be done?">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">>Do It!</button>
+                <button class="btn btn-default" type="button">Do It!</button>
               </span>
-              <div class = "alert"> Hey you entered this already.  whats up with that ?
-              </div>
+              
             </div>
-
+              <div class = "alert"> <span class="glyphicon glyphicon-alert"> Hey you entered this already.  whats up with that ? <span class="glyphicon glyphicon-alert"> 
+              </div>
 
         </div>
       </div>
