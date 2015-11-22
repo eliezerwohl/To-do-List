@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 
     if(isDuplicate) {
-      $(".alert").fadeIn(5000);
+      $(".alert").fadeIn(2000);
       return;
     }
     if (newWord.length === 0) {
@@ -46,9 +46,21 @@ $(document).ready(function() {
   });
 
 
-$("table").on("click", ".checkbox", function() {
- $(this).closest('tr').find('> td:first').addClass("line");
 
+$("table").on("click", ".checkbox", function() {
+
+  var checkSymbol = $(this).parent();
+ $(this).closest('tr').find('td:first').addClass("line");
+ 
+ 
+ $(this).remove();
+ $(checkSymbol).append("<span class='glyphicon glyphicon-ok'>")
+
+
+
+
+
+ //have it add a checkmark
   });
 
 });
