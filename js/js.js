@@ -16,11 +16,11 @@ $(document).ready(function() {
     });
 
     if(isDuplicate) {
-      $(".alert").fadeIn(2000);
+      $("#something").fadeIn(2000);
       return;
     }
     if (newWord.length === 0) {
-      prompt("please enter something to do!");
+      $("#nothing").fadeIn(2000);
       return;
     };
 
